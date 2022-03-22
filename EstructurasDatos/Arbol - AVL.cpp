@@ -191,18 +191,22 @@ int main() {
 	//COMPROBADO - FUNCIONA CORRECTAMENTE	
 
   Node *root = NULL;
-  root = insertNode(root, 100);
-  root = insertNode(root, 90);
-  root = insertNode(root, 80);
-  root = insertNode(root, 110);
-  root = insertNode(root, 95);
-  root = insertNode(root, 120);
-  root = insertNode(root, 130);
-  root = insertNode(root, 140);
-  root = insertNode(root, 111);
+  root = insertNode(root, 103);
+  printTree(root, "", true);
+  root = insertNode(root, 97);
+  printTree(root, "", true);
+  root = insertNode(root, 98);
+  printTree(root, "", true);
+  root = insertNode(root, 114);
+  printTree(root, "", true);
+  root = insertNode(root, 105);
+  printTree(root, "", true);
+  root = insertNode(root, 101);
+  printTree(root, "", true);
+  root = insertNode(root, 108);
   printTree(root, "", true);
   
-  root = deleteNode(root, 100);
+  /*root = deleteNode(root, 100);
   cout << "Despues de eliminar 100: " << endl;
   printTree(root, "", true);
   
@@ -220,5 +224,5 @@ int main() {
   
   root = deleteNode(root, 90);
   cout << "Despues de eliminar 90: " << endl;
-  printTree(root, "", true);
+  printTree(root, "", true);*/
 }

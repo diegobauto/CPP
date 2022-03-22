@@ -412,26 +412,25 @@ class RedBlackTree {
 int main() {
 	//COMPROBADO - FUNCIONA CORRECTAMENTE
 	RedBlackTree bst;
-	bst.insert(17);
-	bst.insert(12);
-	bst.insert(37);
-	bst.insert(9);
-	bst.insert(47);
-	bst.insert(27);
-	bst.insert(32);
-	bst.insert(22);
-	bst.insert(52);
+	bst.insert(100);
+	bst.insert(120);
+	bst.insert(40);
+	bst.insert(150);
+	bst.insert(20);
+	bst.insert(65);
+	bst.insert(50);
+	bst.insert(80);
 	bst.printTree();
 	
 	cout <<endl<< "Insertar el 23:" << endl;
-	bst.insert(23);
+	bst.insert(45);
 	bst.printTree();
   
-	bst.deleteNode(27);
+	/*bst.deleteNode(27);
 	cout <<endl<< "Eliminar 27: " << endl;
 	bst.printTree();
 	
 	cout <<endl<< "Insertar el 10:" << endl;
 	bst.insert(10);
-	bst.printTree();
+	bst.printTree();*/
 }
