@@ -208,6 +208,5 @@ void avl::posorden(node* t){
         return;
     posorden(t->izq);
     posorden(t->der);
-    cout<<t->clave<< " ";
-    
+    cout<<t->clave<< " ";   
 }

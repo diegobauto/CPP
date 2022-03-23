@@ -23,8 +23,31 @@ class ARBOL{
 	void preorden(NODO *);
 	void posorden(NODO *);
 	void destruir (NODO *p);
+	int calcula(NODO *raiz);
+	void nose();
 	~ARBOL();
 };
+
+
+void ARBOL::nose(){
+	cout<<"ajjajajajaja: "<<calcula(raiz_arbol())<<endl;
+}
+
+int ARBOL::calcula(NODO *raiz){
+	int c1=0,c2=0;
+	if(raiz){
+		if(raiz->izq){
+			c1=calcula(raiz->izq);
+		}
+		if(raiz->der){
+			c2=calcula(raiz->der);
+		}
+		if(raiz->izq||raiz->der){
+			return c1+c2+1;
+		}
+	}
+	return 0;
+}
 
 NODO *ARBOL::buscar_arbol(int n, NODO *p, NODO *q){
 	if (p==NULL){
